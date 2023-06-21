@@ -33,6 +33,7 @@ header {
 }
 
 #main-menu {
+  height: 10vh;
   /*display: flex;
   justify-content: space-around;
   position: sticky;
@@ -71,6 +72,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 10vh;
 }
 
 /*}
@@ -78,6 +80,7 @@ footer {
 /*Section styles*/
 section {
   padding: 15px;
+  height: 18vh;
 }
 
 /*Homepage color scheme*/
