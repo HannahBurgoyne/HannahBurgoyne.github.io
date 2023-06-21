@@ -10,7 +10,7 @@
 h1 {
   color: #313030;
   font-family: 'Quicksand', sans-serif;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 h2 {
@@ -28,7 +28,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-right: auto;
-  background-color: red;
+  background-color: #ffffff;
 }
 
 #main-menu {
@@ -41,16 +41,10 @@ header {
 #navigation {
   display: flex;
   justify-content: space-around;
-  /*float: right;
-  margin-left: auto;
-  align-items: center;
-  */
-  background-color: yellow;
 }
 
 #menu-title {
   font-size: 35px;
-  background-color: green;
 }
 .menu-item {
   display: flex;
@@ -58,6 +52,12 @@ header {
   flex: 1;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.menu-link {
+  font-family: 'Quicksand', sans-serif;
+  color: #313030;
+  text-decoration: none;
 }
 
 body {
