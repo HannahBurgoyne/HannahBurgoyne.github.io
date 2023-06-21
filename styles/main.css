@@ -1,5 +1,12 @@
 /* Global styles */
 /*:root { */
+
+/*Prevents gaps between each section of page */
+* {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   color: #313030;
   font-family: 'Quicksand', sans-serif;
@@ -54,7 +61,7 @@ header {
 }
 
 body {
-  /*background-color: #ffffff; */
+  background-color: #ffffff;
 }
 
 /*} */
