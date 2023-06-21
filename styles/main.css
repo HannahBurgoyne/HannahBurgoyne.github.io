@@ -1,3 +1,24 @@
+/* Global styles */
+:root {
+  h1 {
+    color: #313030;
+  }
+
+  h2 {
+    color: #313030;
+  }
+
+  p {
+    color: #313030;
+  }
+
+  body {
+    background-color: #ffffff;
+  }
+
+  --section-padding: 5px;
+}
+
 /*Homepage color scheme*/
 .dark-green {
   background-color: #418a06;
