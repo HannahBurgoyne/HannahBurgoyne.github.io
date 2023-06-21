@@ -19,6 +19,7 @@ p {
 header {
   /*display: inline-flex;*/
   display: flex;
+  justify-content: space-between;
   margin-right: auto;
   background-color: red;
 }
@@ -48,8 +49,8 @@ header {
   display: flex;
   align-items: center;
   flex: 1;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 body {
