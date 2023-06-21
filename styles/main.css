@@ -66,6 +66,11 @@ body {
 
 /*} */
 
+/*Section styles*/
+section {
+  padding: 10px;
+}
+
 /*Homepage color scheme*/
 .dark-green {
   background-color: darkgreen;
