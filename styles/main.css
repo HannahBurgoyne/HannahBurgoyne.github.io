@@ -24,11 +24,11 @@ p {
 }
 
 header {
-  /*display: inline-flex;*/
   display: flex;
   justify-content: space-between;
   margin-right: auto;
   background-color: #ffffff;
+  padding: 15px;
 }
 
 #main-menu {
