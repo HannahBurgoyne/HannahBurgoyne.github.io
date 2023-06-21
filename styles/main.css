@@ -33,7 +33,7 @@ header {
 
 #navigation {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-around;
   /*float: right;
   margin-left: auto;
   align-items: center;
@@ -49,8 +49,8 @@ header {
   display: flex;
   align-items: center;
   flex: 1;
-  padding-left: 2px;
-  padding-right: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 body {
