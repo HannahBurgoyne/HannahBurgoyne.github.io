@@ -31,12 +31,13 @@ header {
   padding: 15px;
 }
 
-#main-menu {
-  /*display: flex;
+/*#main-menu {
+  display: flex;
   justify-content: space-around;
-  */
+  
   background-color: orange;
 }
+*/
 
 #navigation {
   display: flex;
@@ -76,18 +77,22 @@ footer {
 
 /*Section styles*/
 section {
-  padding: 10px;
+  padding: 15px;
 }
 
 /*Homepage color scheme*/
 .dark-green {
-  background-color: darkgreen;
+  background-color: #7bb34d;
 }
 
 .med-green {
-  background-color: #56b608;
+  background-color: #85be56;
 }
 
-.light-green {
-  background-color: #65d607;
+.lighter-green {
+  background-color: #99c776;
+}
+
+.lightest-green {
+  background-color: #b2e08f;
 }
