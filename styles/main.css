@@ -21,6 +21,7 @@ h2 {
 p {
   color: #313030;
   font-family: 'Quicksand', sans-serif;
+  padding: 5px;
 }
 
 header {
@@ -31,13 +32,12 @@ header {
   padding: 15px;
 }
 
-/*#main-menu {
-  display: flex;
+#main-menu {
+  /*display: flex;
   justify-content: space-around;
-  
-  background-color: orange;
+  position: sticky;
+  background-color: orange;*/
 }
-*/
 
 #navigation {
   display: flex;
