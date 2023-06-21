@@ -64,7 +64,15 @@ body {
   background-color: #ffffff;
 }
 
-/*} */
+/* Footer styling */
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*}
 
 /*Section styles*/
 section {
