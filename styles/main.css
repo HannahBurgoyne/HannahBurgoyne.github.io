@@ -42,7 +42,7 @@ header {
 }
 
 #menu-title {
-  font-size: 40px;
+  font-size: 35px;
   background-color: green;
 }
 .menu-item {
@@ -54,15 +54,14 @@ header {
 }
 
 body {
-  background-color: #ffffff;
+  /*background-color: #ffffff; */
 }
 
---section-padding: 5px;
 /*} */
 
 /*Homepage color scheme*/
 .dark-green {
-  background-color: #418a06;
+  background-color: darkgreen;
 }
 
 .med-green {
