@@ -17,12 +17,34 @@ p {
 }
 
 header {
-  display: flex;
+  display: inline-flex;
+  background-color: red;
 }
 
-ul {
+#main-menu {
   display: flex;
+  background-color: orange;
+}
+
+#navigation {
+  display: inline-flex;
   float: right;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: yellow;
+}
+
+#menu-title {
+  display: flex;
+  float: left;
+  font-size: 40px;
+  background-color: green;
+}
+.menu-item {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: blue;
 }
 
 li {
