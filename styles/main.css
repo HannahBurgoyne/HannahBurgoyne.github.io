@@ -16,6 +16,20 @@ p {
   font-family: 'Quicksand', sans-serif;
 }
 
+header {
+  display: flex;
+}
+
+ul {
+  display: flex;
+  float: right;
+}
+
+li {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+}
+
 body {
   background-color: #ffffff;
 }
