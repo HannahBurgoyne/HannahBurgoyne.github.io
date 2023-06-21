@@ -17,39 +17,39 @@ p {
 }
 
 header {
-  display: inline-flex;
+  /*display: inline-flex;*/
+  display: flex;
+  margin-right: auto;
   background-color: red;
 }
 
 #main-menu {
-  display: flex;
+  /*display: flex;
+  justify-content: space-around;
+  */
   background-color: orange;
 }
 
 #navigation {
-  display: inline-flex;
-  float: right;
+  display: flex;
   justify-content: flex-end;
+  /*float: right;
+  margin-left: auto;
   align-items: center;
+  */
   background-color: yellow;
 }
 
 #menu-title {
-  display: flex;
-  float: left;
   font-size: 40px;
   background-color: green;
 }
 .menu-item {
   display: flex;
+  align-items: center;
+  flex: 1;
   padding-left: 5%;
   padding-right: 5%;
-  background-color: blue;
-}
-
-li {
-  font-family: 'Quicksand', sans-serif;
-  font-size: 20px;
 }
 
 body {
