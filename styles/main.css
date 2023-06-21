@@ -116,6 +116,14 @@ section {
   .menu-item {
     padding: 10px;
   }
+
+  .menu-link {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 20px;
+  }
 }
 
 /*Tablet layout*/
