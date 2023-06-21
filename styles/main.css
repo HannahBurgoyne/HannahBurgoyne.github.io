@@ -1,26 +1,27 @@
 /* Global styles */
-:root {
-  h1 {
-    color: #313030;
-    font-family: 'Quicksand', sans-serif;
-  }
-
-  h2 {
-    color: #313030;
-    font-family: 'Quicksand', sans-serif;
-  }
-
-  p {
-    color: #313030;
-    font-family: 'Quicksand', sans-serif;
-  }
-
-  body {
-    background-color: #ffffff;
-  }
-
-  --section-padding: 5px;
+/*:root { */
+h1 {
+  color: #313030;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 50px;
 }
+
+h2 {
+  color: #313030;
+  font-family: 'Quicksand', sans-serif;
+}
+
+p {
+  color: #313030;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+--section-padding: 5px;
+/*} */
 
 /*Homepage color scheme*/
 .dark-green {
