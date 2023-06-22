@@ -232,3 +232,10 @@ img {
   background-color: #e9b0fa;
   padding: 2px;
 }
+
+/*Blog article layout*/
+
+.article-layout {
+  margin-left: 20vw;
+  margin-right: 20vw;
+}
