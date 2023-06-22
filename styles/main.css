@@ -97,7 +97,7 @@ footer {
 
 /*Section styles*/
 section {
-  padding: 15px;
+  padding: 30px;
   height: 18vh;
   min-width: 0;
   margin: 0;
@@ -120,6 +120,7 @@ section {
 img {
   max-width: 100%;
   height: auto;
+  position: relative;
 }
 
 /*Mobile layout*/
@@ -172,6 +173,13 @@ img {
   p {
     font-size: 20px;
   }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 1;
+  }
 }
 
 /*Tablet layout*/
@@ -191,4 +199,8 @@ img {
 
 .lightest-green {
   background-color: #b2e08f;
+}
+
+.highlight {
+  background-color: #c9c8c8;
 }
