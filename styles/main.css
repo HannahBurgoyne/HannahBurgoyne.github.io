@@ -27,7 +27,10 @@ p {
 header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-right: auto;
+  margin-top: 2%;
+  height: 10vh;
   background-color: #ffffff;
   padding: 15px;
 }
@@ -87,7 +90,9 @@ section {
   padding: 15px;
   height: 18vh;
   min-width: 0;
+  margin: 0;
   position: relative;
+  overflow: hidden;
 }
 
 /*Mobile layout*/
@@ -107,6 +112,7 @@ section {
     align-items: center;
     justify-content: center; */
     height: 20vh;
+    overflow: hidden;
   }
 
   #menu-title {
