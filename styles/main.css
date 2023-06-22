@@ -97,13 +97,18 @@ section {
 
 .row {
   display: flex;
-  justify-items: space-around;
+  justify-items: space-evenly;
 }
 
 .column {
   display: flex;
   margin: 5px;
   padding: 5px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /*Mobile layout*/
