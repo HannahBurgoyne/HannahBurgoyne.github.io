@@ -24,13 +24,22 @@ p {
   padding: 5px;
 }
 
-a {
+footer > p > a {
   font-family: 'Quicksand', sans-serif;
   color: #7bb34d;
   text-decoration: none;
 }
 
 footer > p > a:hover {
+  text-decoration: underline;
+}
+
+article > h2 > a {
+  text-decoration: none;
+  color: black;
+}
+
+article > h2 > a:hover {
   text-decoration: underline;
 }
 
@@ -179,6 +188,14 @@ img {
     flex-direction: column;
     flex-wrap: wrap;
     flex: 1;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
   }
 }
 
