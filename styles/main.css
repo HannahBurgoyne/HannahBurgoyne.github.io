@@ -108,6 +108,7 @@ section {
 .row {
   display: flex;
   justify-items: space-evenly;
+  align-items: center;
 }
 
 .column {
