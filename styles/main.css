@@ -54,10 +54,11 @@ header {
   flex: 1;
   padding-left: 10px;
   padding-right: 10px;
+  font-size: 20px;
 }
 
-.menu-item:hover {
-  background-color: #85be56;
+.menu-item > a:hover {
+  color: #85be56;
 }
 
 .menu-link {
