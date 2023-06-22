@@ -86,11 +86,13 @@ footer {
 section {
   padding: 15px;
   height: 18vh;
+  min-width: 0;
+  position: relative;
 }
 
 /*Mobile layout*/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   #navigation {
     display: flex;
     justify-content: center;
