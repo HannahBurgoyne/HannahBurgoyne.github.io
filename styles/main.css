@@ -138,8 +138,6 @@ img {
   position: relative;
 }
 
-/*Blog article layout */
-
 /*Mobile layout*/
 
 @media screen and (max-width: 600px) {
@@ -203,8 +201,6 @@ img {
   }
 }
 
-/*Tablet layout*/
-
 /*Homepage color scheme*/
 
 #hero-section {
@@ -236,6 +232,10 @@ img {
 /*Blog article layout*/
 
 .article-layout {
-  margin-left: 20vw;
-  margin-right: 20vw;
+  padding: 5vw 20vw 5vw 20vw;
+}
+
+.paragraph-spacing {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
