@@ -97,7 +97,13 @@ section {
 
 .row {
   display: flex;
-  justify-items: space-evenly;
+  justify-items: space-around;
+}
+
+.column {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
 }
 
 /*Mobile layout*/
