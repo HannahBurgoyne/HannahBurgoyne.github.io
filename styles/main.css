@@ -95,6 +95,11 @@ section {
   overflow: hidden;
 }
 
+.row {
+  display: flex;
+  justify-items: space-evenly;
+}
+
 /*Mobile layout*/
 
 @media screen and (max-width: 600px) {
