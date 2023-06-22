@@ -24,6 +24,12 @@ p {
   padding: 5px;
 }
 
+a {
+  font-family: 'Quicksand', sans-serif;
+  color: #7bb34d;
+  text-decoration: none;
+}
+
 header {
   display: flex;
   justify-content: space-between;
