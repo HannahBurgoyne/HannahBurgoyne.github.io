@@ -206,6 +206,12 @@ img {
 /*Tablet layout*/
 
 /*Homepage color scheme*/
+
+.hero-section {
+  background-color: #e7e4ff;
+  border-bottom: black solid 2px;
+}
+
 .dark-green {
   background-color: #7bb34d;
 }
