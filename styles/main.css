@@ -239,3 +239,14 @@ img {
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+.article-date {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+time {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
