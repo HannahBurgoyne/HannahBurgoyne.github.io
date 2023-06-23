@@ -3,7 +3,7 @@
 <html lang="en">
   <head>
     <title>My blog</title>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="../styles/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +21,9 @@
         <h1 id="menu-title">Hannah's Blog</h1>
 
         <ul id="navigation">
-          <li class="menu-item"><a href="index.html" class="menu-link">Home</a></li>
+          <li class="menu-item">
+            <a href="../index.html" class="menu-link">Home</a>
+          </li>
           <li class="menu-item"><a href="#" class="menu-link">About</a></li>
           <li class="menu-item"><a href="#" class="menu-link">Articles</a></li>
           <li class="menu-item"><a href="#" class="menu-link">Item</a></li>
@@ -29,130 +31,193 @@
       </header>
     </div>
 
+    <section id="hero-section" class="article-layout">
+      <h1>Class and ID selectors</h1>
+      <h3>A crash course in best practices</h3>
+      <div class="article-date">
+        <time class="highlight">23 June, 2023</time>
+      </div>
+    </section>
 
-<section id="hero-section" class="article-layout">
+    <article class="lightest-green article-layout">
+      <div class="paragraph-spacing">
+        <h2>Introduction</h2>
 
-  <h1>Class and ID selectors</h1>
-  <h3>A crash course in best practices</h3>
-  <div class="article-date">
-  <time class="highlight">23 June, 2023</time>
-  </div>
-</section>
+        <p>
+          When we style code, we need to let our stylesheet know which elements
+          of our webpage we want it to style. That's where class and ID
+          selectors come in.
+        </p>
 
+        <p>
+          Generally speaking, class and ID selectors are the names we give to
+          specific elements in our HTML code. For example, we can create a
+          <code>div</code> container and give it the name <code>pink-div</code>.
+          When we then go into our CSS file and write some style rules for
+          <code>pink-div</code>
+          (such as giving it a padding of 5px, making the background colour pink
+          and giving it a fuschia border), those style rules will only be
+          applied to any element which is named <code>pink-div</code>. This
+          means we can style specific elements in a lot of different ways,
+          creating visually unique sections and pages on a website.
+        </p>
 
-<article class="lighter-green article-layout">
+        <p>
+          In this blog post, we'll be exploring the key differences between a
+          class and an ID, and then we'll delve into the best practices for each
+          of these.
+        </p>
+      </div>
 
-<div class="paragraph-spacing">
-<h2>Introduction</h2>
+      <div class="paragraph-spacing">
+        <h2>What is a class?</h2>
 
-<p>When we style code, we need to let our stylesheet know which elements of our webpage we want it to style. 
-That's where class and ID selectors come in.</p>
+        <p>
+          If you want to apply the exact same set of style rules to lots of
+          different HTML elements, then using the class selector is the right
+          choice. The class selector represents a 'class' of elements which all
+          share the same styles, and it's handy because you only need to define
+          those styles once in your CSS code to apply them multiple times in
+          your HTML code.
+        </p>
 
-<p>Generally speaking, class and ID selectors are the names we give to specific elements in our HTML code. For example, we can create 
-a `<div>` container and give it the name "pink-div". When we then go into our CSS file and write some style rules for "pink-div"
-(such as giving it a padding of 5px, making the background colour pink and giving it a fuschia border), those style rules will 
-only be applied to any element which is named "pink-div". This means we can style specific elements in a lot of different ways, 
-creating visually unique sections and pages on a website.</p>
+        <p>
+          Let's say that you want to style a main menu. Each item in your menu
+          ('Home', 'About', etc) has the exact same name: "menu-item". This is
+          because we want each of our menu items to look and work exactly the
+          same on our website.
+        </p>
 
-<p>In this blog post, we'll be exploring the key differences between a class and an ID, and then we'll delve into the best practices
-for each of these.</p> 
-</div>
+        <div class="code-example">
+          <pre>
+          <code>
+            &#x3C;ul&#x3E;
+            &#x3C;li class=&#x22;menu-item&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Home&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+            &#x3C;li class=&#x22;menu-item&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;About&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+            &#x3C;li class=&#x22;menu-item&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Articles&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+            &#x3C;li class=&#x22;menu-item&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Item&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+            &#x3C;/ul&#x3E;
+          </code>
+        </pre>
+        </div>
 
+        <p>
+          Now, we can go into our CSS stylesheet and create a set of rules for
+          our menu items.
+        </p>
 
-<div class="paragraph-spacing">
-<h2>What is a class?</h2>
+        <div class="code-example">
+          <pre>
+          <code>
+            .menu-item {
+              padding: 8px;
+              width: 100%;
+              color: pink;
+            }
+        </code>
+        </pre>
+        </div>
 
-<p>If you want to apply the exact same set of style rules to lots of different HTML elements, then using the class selector is the 
-right choice. The class selector represents a 'class' of elements which all share the same styles, and it's handy because you only
-need to define those styles once in your CSS code to apply them multiple times in your HTML code.</p>
+        <p>
+          Once we save that and refresh, you'll see that all of the items with
+          the class 'menu-item' now look identical. That's the magic of using a
+          class!
+        </p>
+      </div>
 
-<p>Let's say that you want to style a main menu. Each item in your menu ('Home', 'About', etc) has the exact same name: "menu-item". 
-This is because we want each of our menu items to look and work exactly the same on our website.</p>
+      <div class="paragraph-spacing">
+        <h2>What is an ID?</h2>
 
-```
-code here 
+        <p>
+          Let's say that we want to style the overall look of the main menu
+          itself. Because the main menu is going to be the only element which
+          will have this style applied to it, we don't need to ensure this style
+          can be used elsewhere on the page. That's where the ID selector comes
+          in.
+        </p>
 
-```
+        <p>
+          The ID selector works in a very similar way to the class selector, but
+          there's a key difference. You can only use an ID to style a
+          <strong>single element</strong> in your HTML code.
+        </p>
 
-<p>Now, we can go into our CSS stylesheet and create a set of rules for our menu items.</p>
+        <p>
+          Our overall main menu has an ID called " ", and we are only going to
+          use this name once in our HTML code.
+        </p>
 
-```
-code here 
+        ``` code here ```
 
-```
+        <p>
+          Now, let's go into our CSS stylesheet again. We can create a set of
+          rules for " " as well, but notice the difference in syntax. By using a
+          '#' instead of a '.', we're telling the stylesheet that this
+          particular set of style rules is an ID selector and will therefore
+          only be used <strong>once</strong> in our HTML code.
+        </p>
 
-<p>Once we save that and refresh, you'll see that all of the items with the class 'menu-item' now look identical. That's the magic
-of using a class!</p>
-</div>
+        ``` code here ```
 
-<div class="paragraph-spacing">
-<h2>What is an ID?</h2>
+        <p>
+          When we save this and refresh our webpage, you'll see that we now have
+          our style applied to the main menu element on our webpage. The class
+          and ID selectors essentially function in the same way, but it's how
+          you use them that counts.
+        </p>
+      </div>
 
-<p>Let's say that we want to style the overall look of the main menu itself. Because the main menu is going to be the only element 
-which will have this style applied to it, we don't need to ensure this style can be used elsewhere on the page. That's where 
-the ID selector comes in.</p>
+      <div class="paragraph-spacing">
+        <h2>Best practices</h2>
 
-<p>The ID selector works in a very similar way to the class selector, but there's a key difference. You can only use an ID
-to style a <strong>single element</strong> in your HTML code.</p>
+        <p>
+          You should always reserve ID selectors for styling a single element in
+          your HTML code. If you know you'll only be using a specific element
+          once (such as the main menu from our earlier example), then go ahead
+          and use an ID selector for this.
+        </p>
 
-<p>Our overall main menu has an ID
-called "   ", and we are only going to use this name once in our HTML code.</p>
+        <p>
+          Class selectors are best to use when you have lots of elements in your
+          HTML code which will need to share the same style (such as our menu
+          items from our earlier example).
+        </p>
 
-```
-code here 
+        <p>
+          Ensuring that you use each of these selectors in the correct
+          situations will make your code cleaner, optimised and easier for other
+          developers to read.
+        </p>
 
-```
+        <p>Here's an example of what not to do:</p>
 
-<p>Now, let's go into our CSS stylesheet again. We can create a set of rules for "    " as well, but notice the difference in syntax. 
-By using a '#' instead of a '.', we're telling the stylesheet that this particular set of style rules is an ID selector and will
-therefore only be used <strong>once</strong> in our HTML code.</p>
+        ``` code here ```
 
-```
-code here 
+        <p>
+          Versus what this code can be cleaned up with best practice applied:
+        </p>
 
-```
+        ``` code here ```
 
-<p>When we save this and refresh our webpage, you'll see that we now have our style applied to the main menu element on our webpage.
-The class and ID selectors essentially function in the same way, but it's how you use them that counts.</p>
-</div>
+        <p>
+          It's also important to think about the order of operations when you
+          write your CSS code. When your browser interprets CSS, it looks over
+          all the selectors and determines the order of operations it will
+          'cascade' in. ID selectors always take priority over class selectors
+          in CSS code.
+        </p>
+      </div>
+    </article>
 
-
-<div class="paragraph-spacing">
-<h2>Best practices</h2>
-
-<p>You should always reserve ID selectors for styling a single element in your HTML code. If you know 
-you'll only be using a specific element once (such as the main menu from our earlier example), then go ahead and use an ID selector
-for this.</p>
-
-<p>Class selectors are best to use when you have lots of elements in your HTML code which will need to share the same style (such as
-our menu items from our earlier example).</p>
-
-<p>Ensuring that you use each of these selectors in the correct situations will make your code cleaner, optimised and easier for other
-developers to read.</p>
-
-<p>Here's an example of what not to do:</p>
-
-```
-code here 
-```
-
-<p>Versus what this code can be cleaned up with best practice applied:</p>
-
-```
-code here 
-
-```
-
-<p>It's also important to think about the order of operations when you write your CSS code. When your browser interprets 
-CSS, it looks over all the selectors and determines the order of operations it will 'cascade' in. ID selectors always take priority 
-over class selectors in CSS code.</p>
-</div>
-
-</article>
-
-<footer>
-  <p>Created by me!</p>
-  <p><a href="https://www.flaticon.com/free-icons/publication" title="publication icons">Publication icons created by Iconjam - Flaticon</a></p>
-</footer>
-</body>
+    <footer>
+      <p>Created by me!</p>
+      <p>
+        <a
+          href="https://www.flaticon.com/free-icons/publication"
+          title="publication icons"
+          >Publication icons created by Iconjam - Flaticon</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
