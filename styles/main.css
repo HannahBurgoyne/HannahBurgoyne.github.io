@@ -30,6 +30,7 @@ p {
   padding: 5px;
   font-size: 18px;
   font-weight: 500;
+  line-height: 1.5em;
 }
 
 code {
@@ -253,6 +254,8 @@ time {
   font-size: 18px;
 }
 
+/* Code examples styling */
+
 pre code {
   color: #e9b0fa;
   position: relative;
@@ -262,4 +265,6 @@ pre code {
 .code-example {
   background-color: #313030;
   border: solid 2px white;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
