@@ -143,11 +143,24 @@
         </p>
 
         <p>
-          Our overall main menu has an ID called " ", and we are only going to
-          use this name once in our HTML code.
+          Our overall main menu has an ID called <code>main-menu</code>, and we
+          are only going to use this name once in our HTML code.
         </p>
 
-        ``` code here ```
+        <div class="code-example">
+          <pre>
+          <code>
+            &#x3C;div id=&#x22;main-menu&#x22;&#x3E;
+              &#x3C;ul&#x3E;
+                  &#x3C;li class=&#x22;menu-item&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Home&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                  &#x3C;li class=&#x22;menu-item&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;About&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                  &#x3C;li class=&#x22;menu-item&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Articles&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                  &#x3C;li class=&#x22;menu-item&#x22;&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Item&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+                &#x3C;/ul&#x3E;
+            &#x3C;/div&#x3E;
+        </code>
+        </pre>
+        </div>
 
         <p>
           Now, let's go into our CSS stylesheet again. We can create a set of
@@ -157,7 +170,18 @@
           only be used <strong>once</strong> in our HTML code.
         </p>
 
-        ``` code here ```
+        <div class="code-example">
+          <pre>
+          <code>
+        #main-menu {
+          background-color: white;
+          border: solid black 1px;
+          margin: 2px;
+          padding: 2px;
+        }
+      </code>
+        </pre>
+        </div>
 
         <p>
           When we save this and refresh our webpage, you'll see that we now have
