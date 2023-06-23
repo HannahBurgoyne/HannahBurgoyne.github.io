@@ -215,13 +215,71 @@
 
         <p>Here's an example of what not to do:</p>
 
-        ``` code here ```
+        <div class="code-example">
+          <pre>
+          <code>
+            
+            &#x3C;head&#x3E;
+            &#x3C;style&#x3E;
+              #pink-1 {
+                color: pink;
+                font-size: 10px;
+                font-family: sans-serif;
+              }
 
+              #pink-2 {
+                color: pink;
+                font-size: 10px;
+                font-family: sans-serif;
+              }
+
+              #pink-3 {
+                color: pink;
+                font-size: 10px;
+                font-family: sans-serif;
+              }
+            &#x3C;/style&#x3E;
+          &#x3C;/head&#x3E;
+            &#x3C;html&#x3E;
+              &#x3C;body&#x3E;
+                &#x3C;p id=&#x22;pink-1&#x22;&#x3E;This is a pink paragraph.&#x3C;/p&#x3E;
+
+                &#x3C;p id=&#x22;pink-2&#x22;&#x3E;This is another pink paragraph.&#x3C;/p&#x3E;
+
+                &#x3C;p id=&#x22;pink-3&#x22;&#x3E;And another.&#x3C;/p&#x3E;
+              &#x3C;/body&#x3E;
+            &#x3C;/html&#x3E;
+          </code>
+        </pre>
+        </div>
         <p>
-          Versus what this code can be cleaned up with best practice applied:
+          Versus how this code can be cleaned up with best practice applied:
         </p>
 
-        ``` code here ```
+        <div class="code-example">
+          <pre>
+          <code>
+            &#x3C;head&#x3E;
+            &#x3C;style&#x3E;
+              .pink-paragraph {
+                color: pink;
+                font-size: 10px;
+                font-family: sans-serif;
+              }
+            &#x3C;/style&#x3E;
+          &#x3C;/head&#x3E;
+            &#x3C;html&#x3E;
+              &#x3C;body&#x3E;
+                &#x3C;p class=&#x22;pink-paragraph&#x22;&#x3E;This is a pink paragraph.&#x3C;/p&#x3E;
+  
+                &#x3C;p id=&#x22;pink-paragraph&#x22;&#x3E;This is another pink paragraph.&#x3C;/p&#x3E;
+  
+                &#x3C;p id=&#x22;pink-paragraph&#x22;&#x3E;And another.&#x3C;/p&#x3E;
+              &#x3C;/body&#x3E;
+            &#x3C;/html&#x3E;
+        </code>
+        </pre>
+        </div>
 
         <p>
           It's also important to think about the order of operations when you
