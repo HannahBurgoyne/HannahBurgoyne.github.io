@@ -64,13 +64,13 @@ header {
   align-items: center;
   margin-right: auto;
   margin-top: 2%;
-  height: 10vh;
+  /* height: 10vh; */
   background-color: #ffffff;
   padding: 15px;
 }
 
 #main-menu {
-  height: 10vh;
+  /* height: 10vh; */
 }
 
 #navigation {
@@ -110,13 +110,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 10vh;
+  /* height: 10vh; */
 }
 
 /*Section styles*/
 section {
   padding: 30px;
-  height: 18vh;
+  /* height: 18vh; */
   min-width: 0;
   margin: 0;
   position: relative;
@@ -153,7 +153,7 @@ img {
   }
 
   #main-menu {
-    height: 20vh;
+    /* height: 20vh; */
     overflow: hidden;
   }
 
@@ -167,7 +167,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 10vh;
+    /* height: 10vh; */
   }
 
   .menu-item {
@@ -200,7 +200,7 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    /* height: 10vh; */
   }
 }
 
