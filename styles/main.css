@@ -1,5 +1,6 @@
-/* Global styles */
-/*:root { */
+/* Responsive issue I'm having: if you look at the website in different device screen sizes 
+in Dev Tools, sometimes the content isn't sizing to fit properly and is going outside 
+the bounds of the screen. This is sometimes also an issue when resizing with the viewport.*/
 
 /*Prevents gaps between each section of page */
 * {
@@ -27,6 +28,12 @@ p {
   color: #313030;
   font-family: 'Quicksand', sans-serif;
   padding: 5px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+code {
+  font-size: 18px;
 }
 
 footer > p > a {
@@ -48,6 +55,8 @@ article > h2 > a:hover {
   text-decoration: underline;
 }
 
+/*Menu layout*/
+
 header {
   display: flex;
   justify-content: space-between;
@@ -61,10 +70,6 @@ header {
 
 #main-menu {
   height: 10vh;
-  /*display: flex;
-  justify-content: space-around;
-  position: sticky;
-  background-color: orange;*/
 }
 
 #navigation {
@@ -106,9 +111,6 @@ footer {
   align-items: center;
   height: 10vh;
 }
-
-/*}
-
 
 /*Section styles*/
 section {
@@ -201,7 +203,7 @@ img {
   }
 }
 
-/*Homepage color scheme*/
+/*Website color scheme*/
 
 #hero-section {
   background-color: #e7e4ff;
@@ -249,4 +251,13 @@ time {
   font-family: 'Quicksand', sans-serif;
   font-weight: 400;
   font-size: 18px;
+}
+
+pre code {
+  color: #e9b0fa;
+}
+
+.code-example {
+  background-color: #313030;
+  border: solid 2px white;
 }
