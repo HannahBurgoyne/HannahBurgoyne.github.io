@@ -24,7 +24,12 @@ h3 {
   font-family: 'Quicksand', sans-serif;
 }
 
-p {
+ul {
+  padding-left: 5%;
+}
+
+p,
+li {
   color: #313030;
   font-family: 'Quicksand', sans-serif;
   padding: 5px;
