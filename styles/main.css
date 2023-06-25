@@ -44,6 +44,10 @@ code {
   font-size: 18px;
 }
 
+footer > p {
+  padding: 3%;
+}
+
 footer > p > a {
   font-family: 'Quicksand', sans-serif;
   color: #7bb34d;
