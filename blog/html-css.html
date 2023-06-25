@@ -75,17 +75,17 @@
         <p>
           If you want to apply the exact same set of style rules to lots of
           different HTML elements, then using the class selector is the right
-          choice. The class selector represents a 'class' of elements which all
-          share the same styles, and it's handy because you only need to define
-          those styles once in your CSS code to apply them multiple times in
-          your HTML code.
+          choice. The class selector represents a 'class' of elements which
+          <strong>all share the same styles</strong>, and it's handy because you
+          only need to define those styles once in your CSS code to apply them
+          multiple times in your HTML code.
         </p>
 
         <p>
           Let's say that you want to style a main menu. Each item in your menu
           ('Home', 'About', etc) has the exact same name: "menu-item". This is
-          because we want each of our menu items to look and work exactly the
-          same on our website.
+          because we want each of our menu items to look exactly the same on our
+          website.
         </p>
 
         <div class="code-example">
@@ -164,10 +164,10 @@
 
         <p>
           Now, let's go into our CSS stylesheet again. We can create a set of
-          rules for " " as well, but notice the difference in syntax. By using a
-          '#' instead of a '.', we're telling the stylesheet that this
-          particular set of style rules is an ID selector and will therefore
-          only be used <strong>once</strong> in our HTML code.
+          rules for <code>main-menu</code> as well, but notice the difference in
+          syntax. By using a '#' instead of a '.', we're telling the stylesheet
+          that this particular set of style rules is an ID selector and will
+          therefore only be used <strong>once</strong> in our HTML code.
         </p>
 
         <div class="code-example">
@@ -198,16 +198,17 @@
         <h2>Best practices</h2>
 
         <p>
-          You should always reserve ID selectors for styling a single element in
-          your HTML code. If you know you'll only be using a specific element
-          once (such as the main menu from our earlier example), then go ahead
-          and use an ID selector for this.
+          You should always reserve ID selectors for styling a
+          <strong>single</strong> element in your HTML code. If you know you'll
+          only be using a specific element once (such as the main menu from our
+          earlier example), then go ahead and use an ID selector for this.
         </p>
 
         <p>
-          Class selectors are best to use when you have lots of elements in your
-          HTML code which will need to share the same style (such as our menu
-          items from our earlier example).
+          Class selectors are best to use when you have
+          <strong>lots of elements</strong> in your HTML code which will need to
+          share the same style (such as our menu items from our earlier
+          example).
         </p>
 
         <p>
@@ -288,8 +289,8 @@
           It's also important to think about the order of operations when you
           write your CSS code. When your browser interprets CSS, it looks over
           all the selectors and determines the order of operations it will
-          'cascade' in. ID selectors always take priority over class selectors
-          in CSS code.
+          'cascade' in. ID selectors <strong>always take priority</strong> over
+          class selectors in CSS code.
         </p>
       </div>
 
