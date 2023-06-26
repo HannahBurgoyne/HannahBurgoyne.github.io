@@ -1,7 +1,3 @@
-/* Responsive issue I'm having: if you look at the website in different device screen sizes 
-in Dev Tools, sometimes the content isn't sizing to fit properly and is going outside 
-the bounds of the screen. This is sometimes also an issue when resizing with the viewport.*/
-
 /*Prevents gaps between each section of page */
 * {
   margin: 0;
@@ -279,20 +275,24 @@ time {
   border-bottom: black solid 2px;
 }
 
-.dark-green {
+.darkest-green {
   background-color: #7bb34d;
 }
 
-.med-green {
+.dark-green {
   background-color: #85be56;
 }
 
+.med-green {
+  background-color: #90ce5e;
+}
+
 .lighter-green {
-  background-color: #99c776;
+  background-color: #9fe16d;
 }
 
 .lightest-green {
-  background-color: #b2e08f;
+  background-color: #baff85;
 }
 
 .highlight {
