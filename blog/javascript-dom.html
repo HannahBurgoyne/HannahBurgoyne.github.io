@@ -1,0 +1,206 @@
+<html lang="en">
+  <head>
+    <title>My blog</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="../styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Menu navigation bar-->
+
+    <div id="main-menu">
+      <header>
+        <h1 id="menu-title">Hannah's Blog</h1>
+
+        <ul id="navigation">
+          <li class="menu-item">
+            <a href="../index.html" class="menu-link">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="../about.html" class="menu-link">About</a>
+          </li>
+          <li class="menu-item"><a href="#" class="menu-link">Articles</a></li>
+        </ul>
+      </header>
+    </div>
+
+    <section id="hero-section" class="article-layout">
+      <h1>Working with JavaScript in the DOM</h1>
+      <h3>Making websites come to life</h3>
+      <div class="article-date">
+        <time class="highlight">30 June, 2023</time>
+      </div>
+    </section>
+
+    <article class="lightest-green article-layout">
+      <div class="paragraph-spacing">
+        <h2>The DOM, HTML, and CSS</h2>
+
+        <p>
+          Imagine a large, mature tree filled with branches and leaves. Unlike
+          most trees you come across, this one has been built from a blueprint -
+          a large diagram which sets out all the individual elements of the
+          tree, all planned out before it grew. Each leaf is an element, some
+          unique, some alike.
+        </p>
+        <p>
+          The tree's overall appearance and decoration has been also been
+          preconceived. The colours in every leaf, the positioning of each
+          branch, and the width of the trunk, have all been decided by a set of
+          style guidelines written out on a plan.
+        </p>
+        <p>
+          Now, imagine you want to make some changes to the tree even though it
+          has already grown up. Maybe you could make these to the blueprint, but
+          that's not really the most practical way to do things now that the
+          tree has grown. Instead, you gather some tools and you begin pruning
+          the tree. These are magical tools, which allow you to change the
+          leaves from green to autumnal red, and to make a secret opening in the
+          foot of the tree when a special button is pressed. Suddenly, the tree
+          is transformed from a basic ordinary looking tree into something alive
+          and interactive.
+        </p>
+        <p>
+          This analogy represents how HTML, CSS, JavaScript, and the Document
+          Object Model (DOM) work together. HTML is the blueprint which plans in
+          advance how the tree should be structured and designed. CSS is the
+          decorative styles applied to the tree, as a series of guidelines
+          dictacting its appearance. The DOM is the tree itself, which it grows
+          up (aka is parsed through the internet browser) as dictated by the
+          HTML blueprint and the CSS style guidelines.And JavaScript is the
+          tools you used to make alterations to the tree itself, allowing you to
+          make changes to the tree and enrich the experience visitors have with
+          it.
+        </p>
+        <p>
+          The Document Object Model is the result of your web browser parsing an
+          HTML document and using this to build a tree-like structure, or DOM,
+          which allows you to interact with and manipulate elements of a
+          webpage. The easiest way to access the DOM is to go into 'Developer
+          Tools' in a web browser such as Google Chrome. A sidebar appears on
+          the right-hand side of your screen, allowing you to click through all
+          the elements and look at images of them. This is known as traversing
+          (i.e. virtually exploring) the DOM.
+        </p>
+
+        <p>
+          Traversing the DOM is a useful and even powerful way to interact with
+          a website. Developer Tools allows you to temporarily change aspects of
+          the DOM, giving you a virtual sandbox in which to test out potential
+          changes to a webpage without altering the actual source code. For
+          example, you could try out changing the background colour of your
+          webpage to red, and rewrite some of the page's content. If you don't
+          like the result, you can refresh the page and it will reverse all
+          changes - giving you the opportunity to try a different approach until
+          you find something you like enough to permanently code into your site.
+        </p>
+        <p>
+          JavaScript is a way of manipulating the DOM without needing to use Dev
+          Tools all the time. It means that you can add interactivity into the
+          source code of your website, such as writing a script which commands
+          that when a button is pressed by the user, confetti rains down on the
+          webpage. Or maybe all the text changes to bright green and dances
+          around. The user is given a level of agency over how they interact
+          with the webpage, and creative ways to engage with it which enhance
+          how they take in the content.
+        </p>
+      </div>
+
+      <div class="paragraph-spacing">
+        <h2>Control flow in JavaScript</h2>
+        <p>
+          When you go to the gym, you probably have a workout routine which you
+          follow to get the most out of your time there. Maybe you start by
+          warming up on the treadmill, and then do some exercises on the mat.
+          Then you move on to the weights rack, and do some reps there. And
+          maybe you finish with some lunges across the floor of the gym, before
+          doing some stretches to warm down and then hit the showers. You keep
+          it consistent and familiar, and you execute your planned workout
+          smoothly and confidently, knowing exactly what you'll be doing when
+          you do it.
+        </p>
+        <p>
+          Now imagine if your computer went to the gym. Your computer has a
+          workout plan all of their own, and they stick to it without fail every
+          time - as long as the workout plan is in perfect order. When you write
+          a JavaScript file, you're essentially writing a plan for your computer
+          to execute. The computer will always execute the plan in order from
+          top to bottom, and this is called control flow. Control flow is this
+          ordered process of reading the computer follows, just as if we were
+          reading a workout plan and doing all the exercises in order from start
+          to finish.
+        </p>
+        <p>
+          Control flow runs smoothly until the computer encounters two things:
+          conditionals and loops. Conditionals are statements in a JavaScript
+          file, for example the <code>if... else</code> statement which contains
+          a series of actions nested within it. The computer only executes these
+          actions if the conditions are met. To return to our gym analogy, the
+          computer gets to the section of their workout plan which reads: "if
+          Bob is using the ab crunch machine, go and do 3 sets of 5 reps on
+          rowing machine instead. Else, if Bob is not using the ab crunch
+          machine, go and do 2 sets of 10 reps on there." The action your
+          computer takes depends on which condition is met in this section of
+          the plan. Thus, the control flow is altered.
+        </p>
+        <p>
+          Loops similarly change the computer's control flow. However, rather
+          than the outcome being changed by a conditional statement, a loop
+          tells the computer to keep executing a statement over and over until a
+          certain set of conditions have been met. In our gym analogy, the
+          computer gets to a section of their workout plan which reads: "Go to
+          the weights rack. Deadlift this 10kg barbell over and over, and each
+          time you lift it, add 1kg extra to the barbell. Repeat this until you
+          are so exhausted you cannot lift anymore." The computer will obey and
+          lift an increasingly heavy barbell until they meet the condition of
+          being exhausted. Then, the computer will continue to execute the next
+          exercises on the workout plan in a state of control flow, until it
+          comes across a conditional and/or a loop once again.
+        </p>
+
+        <p></p>
+
+        <p></p>
+      </div>
+
+      <div class="paragraph-spacing">
+        <h2></h2>
+
+        <p></p>
+        <p></p>
+      </div>
+
+      <div class="paragraph-spacing">
+        <h2>What are some ways to improve your emotional intelligence?</h2>
+
+        <p></p>
+
+        <p></p>
+
+        <p></p>
+      </div>
+
+      <div class="paragraph-spacing">
+        <h2></h2>
+        <p></p>
+      </div>
+    </article>
+
+    <footer>
+      <p>Created by me!</p>
+      <p>
+        <a
+          href="https://www.flaticon.com/free-icons/publication"
+          title="publication icons"
+          >Publication icons created by Iconjam - Flaticon</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
