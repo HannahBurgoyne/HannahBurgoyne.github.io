@@ -58,35 +58,40 @@
         <p>
           Now, imagine you want to make some changes to the tree even though it
           has already grown up. Maybe you could make these to the blueprint, but
-          that's not really the most practical way to do things now that the
-          tree has grown. Instead, you gather some tools and you begin pruning
-          the tree. These are magical tools, which allow you to change the
-          leaves from green to autumnal red, and to make a secret opening in the
-          foot of the tree when a special button is pressed. Suddenly, the tree
-          is transformed from a basic ordinary looking tree into something alive
-          and interactive.
+          there's a more exciting way to do it. Instead, you gather some tools
+          and you begin pruning the tree. These are magical tools, which allow
+          you to change the leaves from green to autumnal red, and to make a
+          secret opening in the foot of the tree when a special button is
+          pressed. Suddenly, the tree is transformed from a basic ordinary
+          looking tree into something alive and interactive.
         </p>
         <p>
-          This analogy represents how HTML, CSS, JavaScript, and the Document
-          Object Model (DOM) work together. HTML is the blueprint which plans in
-          advance how the tree should be structured and designed. CSS is the
+          This analogy represents how <strong>HTML</strong>,
+          <strong>CSS</strong>, <strong>JavaScript</strong>, and the
+          <strong>Document Object Model (DOM)</strong> work together.
+          <strong>HTML</strong> is the blueprint which plans in advance how the
+          tree should be structured and designed. <strong>CSS</strong> is the
           decorative styles applied to the tree, as a series of guidelines
-          dictacting its appearance. The DOM is the tree itself, which it grows
-          up (aka is parsed through the internet browser) as dictated by the
-          HTML blueprint and the CSS style guidelines.And JavaScript is the
-          tools you used to make alterations to the tree itself, allowing you to
-          make changes to the tree and enrich the experience visitors have with
-          it.
+          dictacting its appearance. The <strong>DOM</strong> is the tree
+          itself, which it grows up (aka is parsed through the internet browser)
+          as dictated by the HTML blueprint and the CSS style guidelines. And
+          <strong>JavaScript</strong> is the tools you used to make alterations
+          to the tree itself, allowing you to enrich the experience visitors
+          have with it.
         </p>
+      </div>
+
+      <div class="paragraph-spacing">
+        <h2>Exploring the DOM</h2>
         <p>
           The Document Object Model is the result of your web browser parsing an
-          HTML document and using this to build a tree-like structure, or DOM,
-          which allows you to interact with and manipulate elements of a
-          webpage. The easiest way to access the DOM is to go into 'Developer
-          Tools' in a web browser such as Google Chrome. A sidebar appears on
-          the right-hand side of your screen, allowing you to click through all
-          the elements and look at images of them. This is known as traversing
-          (i.e. virtually exploring) the DOM.
+          HTML document and using this to build a tree-like structure, which
+          allows you to interact with and manipulate elements of a webpage. The
+          easiest way to access the DOM is to go into 'Developer Tools' in a web
+          browser such as Google Chrome. A sidebar appears on the right-hand
+          side of your screen, allowing you to click through all the elements
+          and look at images of them. This is known as
+          <strong>traversing</strong> (i.e. virtually exploring) the DOM.
         </p>
 
         <p>
@@ -110,6 +115,11 @@
           with the webpage, and creative ways to engage with it which enhance
           how they take in the content.
         </p>
+        <p>
+          There's a particular way in which your computer reads JavaScript, and
+          this is a key aspect of ensuring a webpage's interactive elements run
+          just as you planned them to.
+        </p>
       </div>
 
       <div class="paragraph-spacing">
@@ -121,9 +131,9 @@
           Then you move on to the weights rack, and do some reps there. And
           maybe you finish with some lunges across the floor of the gym, before
           doing some stretches to warm down and then hit the showers. You keep
-          it consistent and familiar, and you execute your planned workout
-          smoothly and confidently, knowing exactly what you'll be doing when
-          you do it.
+          it consistent and familiar so that you can execute your planned
+          workout smoothly and confidently, knowing exactly what you'll be doing
+          and when you'll do it.
         </p>
         <p>
           Now imagine if your computer went to the gym. Your computer has a
@@ -132,36 +142,43 @@
           a JavaScript file, you're essentially writing a plan for your computer
           to execute. The computer will always execute the plan in order from
           top to bottom, and this is called control flow. Control flow is this
-          ordered process of reading the computer follows, just as if we were
-          reading a workout plan and doing all the exercises in order from start
-          to finish.
+          ordered process of reading which the computer follows, just as if we
+          were reading a workout plan and doing all the exercises in order from
+          start to finish.
         </p>
         <p>
-          Control flow runs smoothly until the computer encounters two things:
-          conditionals and loops. Conditionals are statements in a JavaScript
-          file, for example the <code>if... else</code> statement which contains
-          a series of actions nested within it. The computer only executes these
-          actions if the conditions are met. To return to our gym analogy, the
-          computer gets to the section of their workout plan which reads: "if
-          Bob is using the ab crunch machine, go and do 3 sets of 5 reps on
-          rowing machine instead. Else, if Bob is not using the ab crunch
-          machine, go and do 2 sets of 10 reps on there." The action your
-          computer takes depends on which condition is met in this section of
-          the plan. Thus, the control flow is altered.
+          Control flow runs smoothly until the computer encounters one of two
+          things: <strong>conditionals</strong> and <strong>loops</strong>.
+          <strong>Conditionals</strong> are statements in a JavaScript file, for
+          example the <code>if... else</code> statement which contains a series
+          of actions nested within it. The computer only executes these actions
+          if the conditions are met. To return to our gym analogy, the computer
+          gets to the section of their workout plan which reads:
+          <code
+            >"If Bob is using the ab crunch machine, go and do 3 sets of 5 reps
+            on the rowing machine instead. Else, if Bob is not using the ab
+            crunch machine, go and do 2 sets of 10 reps on there."</code
+          >
+          The action your computer takes depends on which condition is met in
+          this section of the plan. Thus, the control flow is altered.
         </p>
         <p>
-          Loops similarly change the computer's control flow. However, rather
-          than the outcome being changed by a conditional statement, a loop
-          tells the computer to keep executing a statement over and over until a
-          certain set of conditions have been met. In our gym analogy, the
-          computer gets to a section of their workout plan which reads: "Go to
-          the weights rack. Deadlift this 10kg barbell over and over, and each
-          time you lift it, add 1kg extra to the barbell. Repeat this until you
-          are so exhausted you cannot lift anymore." The computer will obey and
-          lift an increasingly heavy barbell until they meet the condition of
-          being exhausted. Then, the computer will continue to execute the next
-          exercises on the workout plan in a state of control flow, until it
-          comes across a conditional and/or a loop once again.
+          <strong>Loops</strong> similarly change the computer's control flow.
+          However, rather than the outcome being changed by a conditional
+          statement, a loop tells the computer to keep executing a statement
+          over and over until a certain set of conditions have been met. In our
+          gym analogy, the computer gets to a section of their workout plan
+          which reads:
+          <code
+            >"Go to the weights rack. Deadlift this 10kg barbell over and over,
+            and each time you lift it, add 1kg extra to the barbell. Repeat this
+            until you are so exhausted that you cannot lift anymore."</code
+          >
+          The computer will obey and lift an increasingly heavy barbell until
+          they meet the condition of being exhausted. Then, the computer will
+          cease the loop and continue on to execute the next exercises on the
+          workout plan in a state of control flow, until it comes across a
+          conditional and/or a loop once again.
         </p>
       </div>
 
@@ -169,11 +186,17 @@
         <h2>Accessing Arrays and Objects with JavaScript</h2>
 
         <p>
-          An array is a list of items contained within square brackets. Think of
-          a bunch of fruits, for example. If you have a pineapple, a banana, a
-          mango, and an orange, they all fall under the category of 'fruit', but
-          are also items in their own right. Here's how we would represent that
-          in JavaScript:
+          When we write JavaScript, often we have a bunch of data which we want
+          to store for reference so we can access it again later in our file.
+          This is where <strong>arrays</strong> and
+          <strong>objects</strong> come in.
+        </p>
+        <p>
+          An <strong>array</strong> is a list of items contained within square
+          brackets. Think of a bunch of fruits, for example. If you have a
+          pineapple, a banana, a mango, and an orange, they all fall under the
+          category of 'fruit', but are also items in their own right. Here's how
+          we would represent that in JavaScript:
         </p>
 
         <pre><code>
@@ -201,22 +224,23 @@
           by its name. This will correspond to the entire list of items.
         </p>
         <p>
-          An object also stores a bunch of items, but is structured differently
-          from an array. An object stores not only a list of items (properties),
-          but also some data unique to each item in that list (values). Think of
-          a real-life object, like a bed. A bed is made up of lots of smaller
-          items, like the mattress (which is springy), the pillows (which are
-          soft), the bed-frame(which is wooden), and the sheets (which are
-          blue). If we were to represent this bed as an object in JavaScript,
-          here's what it would look like:
+          An <strong>object</strong> also stores a bunch of items, but is
+          structured differently from an array. An object stores not only a list
+          of items (<strong>properties</strong>), but also some data unique to
+          each item in that list (<strong>values</strong>). Think of a real-life
+          object, like a bed. A bed is made up of lots of smaller items, like
+          the mattress (which is springy), the pillows (which are soft), the
+          bed-frame(which is wooden), and the sheets (which are blue). If we
+          were to represent this bed as an object in JavaScript, here's what it
+          would look like:
         </p>
         <pre><code>
             Object here  
           </code></pre>
         <p>
-          To access properties within an object, you have the option of using
-          two different types of notation. Although the syntax differs, each
-          method ultimately accesses the object property in the same way.
+          To access the properties within an object, you have the option of
+          using two different types of notation. Although the syntax differs,
+          each method ultimately accesses the object property in the same way.
         </p>
         <pre><code>
           Bracket and dot notation examples here  
@@ -230,14 +254,14 @@
           Sometimes, we write a particular set of instructions for our computer
           to execute, and we want to save that set and call on our computer to
           use it again at another point in our JavaScript file. That's where
-          functions really come in handy.
+          <strong>functions</strong> really come in handy.
         </p>
         <p>
-          A function is a section of code which is designed to perform a
-          specific task. For example, you may want your computer to multiply two
-          numbers, and return the result of this multiplication. Let's say that
-          you want your computer to perform this task not only once, but anytime
-          you ask it to within your JavaScript file.
+          A <strong>function</strong> is a section of code which is designed to
+          perform a specific task. For example, you may want your computer to
+          multiply two numbers, and return the answer. Let's say that you want
+          your computer to perform this task not only once, but anytime you ask
+          it to within your JavaScript file.
         </p>
         <p>
           Instead of writing out the same piece of code multiple times, you can
@@ -248,11 +272,12 @@
         </code></pre>
         <p>
           The beauty of a function really becomes apparent when you make use of
-          parameters, aka the content you put inside the brackets after the name
-          of the function. By typing placeholder names into these brackets, and
-          then using those placeholder names throughout the function to indicate
-          specific actions, you can ask the computer to execute the task using
-          any values you place inside those brackets. For example:
+          <strong>parameters</strong>, aka the content you put inside the
+          brackets after the name of the function. By typing placeholder names
+          into these brackets, and then using those placeholder names throughout
+          the function to indicate specific actions, you can ask the computer to
+          execute the task using any values you place inside those brackets. For
+          example:
         </p>
         <pre><code>
           Function example here   
@@ -263,11 +288,11 @@
           for you using those specific parameters. This is great for creating
           all kinds of interactive tools and elements on a website, such as
           convertor which converts whatever temperature/measurement/time you
-          input to the equivalent temperature/measurement/time, or an alert that
-          you can customise to say any message you write into it. A group of
-          functions all executing different sets of actions, all within one
-          JavaScript file, can even become components of an interactive game.
-          The possibilities are endless!
+          input to the equivalent temperature/measurement/time in another unit
+          standard, or an alert that you can customise to say any message you
+          write into it. A group of functions all executing different sets of
+          actions, all within one JavaScript file, can even become components of
+          an interactive game. The possibilities are endless!
         </p>
       </div>
 
@@ -275,16 +300,19 @@
         <h2>Putting it all together!</h2>
         <p>
           All the topics we've discussed above are frequently used together to
-          create interactive website experiences. As mentioned, the DOM builds a
-          working tree from its HTML and CSS sourcecode. A developer can then
-          access this tree to test things out, or can write JavaScript code
-          which manipulates parts of this tree through commands. Within the
-          JavaScript code, a developer can store data within arrays and/or
-          objects, and this data can then be accessed and manipulated through
-          tasks contained and repeated within a series of functions called upon
+          create interactive website experiences. As mentioned, the
+          <strong>DOM</strong> builds a working tree from its
+          <strong>HTML</strong> and <strong>CSS</strong> sourcecode. A developer
+          can then access this tree to test things out, or can write
+          <strong>JavaScript</strong>
+          code which manipulates parts of this tree through commands. Within the
+          JavaScript code, a developer can store data within
+          <strong>arrays</strong> and/or <strong>objects</strong>, and this data
+          can then be accessed and manipulated through tasks contained and
+          repeated within a series of <strong>functions</strong> called upon
           throughout the script. The computer will read the JavaScript file from
-          top to bottom and execute commands in its control flow state, bringing
-          the website to life.
+          top to bottom and execute commands in its
+          <strong>control flow</strong> state, bringing the website to life.
         </p>
         <p>
           These are all exciting topics in their own right, but bringing them
