@@ -201,7 +201,7 @@
 
         <div class="code-example">
           <pre><code>
-            Array example here  
+            const fruit = ["pineapple", "banana", "mango", "orange"];
           </code></pre>
         </div>
         <p>
@@ -212,7 +212,8 @@
 
         <div class="code-example">
           <pre><code>
-          Index example here 
+            //    array = [     0,         1,       2,         3   ];
+            const fruit = ["pineapple", "banana", "mango", "orange"];
         </code></pre>
         </div>
         <p>
@@ -223,12 +224,16 @@
         </p>
         <div class="code-example">
           <pre><code>
-          Accessing array element example here 
+            const fruit = ["pineapple", "banana", "mango", "orange"];
+
+            let myFavouriteFruit = fruit[2];
+            // myFavouriteFruit is mango 
         </code></pre>
         </div>
         <p>
           You can also, if you wish, access the entire array by referring to it
-          by its name. This will correspond to the entire list of items.
+          by its name (i.e. <code>fruit</code>). This will correspond to the
+          entire list of items.
         </p>
         <p>
           An <strong>object</strong> also stores a bunch of items, but is
@@ -243,7 +248,13 @@
         </p>
         <div class="code-example">
           <pre><code>
-            Object here  
+            const bed = {
+            // property: value;
+                mattress: springy; 
+                pillows: soft; 
+                bed-frame: wooden; 
+                sheets: blue;
+            } 
           </code></pre>
         </div>
         <p>
@@ -253,7 +264,14 @@
         </p>
         <div class="code-example">
           <pre><code>
-          Bracket and dot notation examples here  
+          //Access mattress using bracket notation 
+
+          let myMattress = bed["mattress"]; 
+
+
+          //Access mattress using dot notation 
+
+          let myMattress = bed.mattress; 
         </code></pre>
         </div>
       </div>
@@ -280,7 +298,10 @@
         </p>
         <div class="code-example">
           <pre><code>
-          Function example here   
+          function multiplyTwo() {
+              let answer = 2 * 2; 
+              return answer; 
+          } 
         </code></pre>
         </div>
         <p>
@@ -294,7 +315,13 @@
         </p>
         <div class="code-example">
           <pre><code>
-          Function example here   
+          function multiplyTwo(num1, num2) {
+            let answer = num1 * num2;
+            return answer;
+          }   
+
+        // calling multiplyTwo(2, 2) would return an answer of 4 
+        // calling multiplyTwo(5, 6) would return an answer of 30
         </code></pre>
         </div>
         <p>
