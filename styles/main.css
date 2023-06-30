@@ -64,6 +64,9 @@ footer > p > a:hover {
 }
 
 article > h2 > a {
+  color: #313030;
+  font-family: 'Quicksand', sans-serif;
+  padding-bottom: 5%;
   text-decoration: none;
   color: black;
 }
