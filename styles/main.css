@@ -63,6 +63,11 @@ footer > p > a:hover {
   text-decoration: underline;
 }
 
+article {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 article > h2 > a {
   color: #313030;
   font-family: 'Quicksand', sans-serif;
@@ -189,6 +194,7 @@ section {
 .horizontal-column {
   display: flex;
   flex-direction: column;
+  padding: 5px;
 }
 
 img {
