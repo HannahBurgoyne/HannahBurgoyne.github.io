@@ -44,45 +44,294 @@
       <div class="paragraph-spacing">
         <h2>Introduction</h2>
 
-        <p>blah</p>
+        <p>
+          This week we had the pleasure of wringing our brains out and hanging
+          them up to dry - aka going through a series of JavaScript Kata
+          challenges. The term 'kata' derives from Japanese martial arts, and
+          essentially means practising different skills through a series of
+          repetitive challenges. In a programming context, these types of
+          challenges are an important way of learning how to problem solve
+          effectively and improve your process - to hopefully avoid the
+          brain-mashing that inevitably happens during the learning stages of
+          JavaScript!
+        </p>
+
+        <p>
+          Below I'll share my experience problem solving this week's Kata
+          challenges, and reflect on what worked for me, what needs improving,
+          and what I'll keep in mind for next time I charge face first at an
+          array of objects while screaming.
+        </p>
       </div>
 
       <div class="paragraph-spacing">
-        <h2>My simple problem</h2>
-        <p>blah</p>
+        <h2>The Gradebook challenges should be simple... right?</h2>
+        <p>Spoiler alert: they were not!</p>
 
-        <p>blah</p>
+        <p>
+          I went into section 4 of Javascript Kata thinking that it was going to
+          be a lot easier than it ended up being. For this section I was tasked
+          with creating a virtual gradebook, and writing a function which
+          automatically adds a list of students, and their corresponding scores,
+          into it.
+        </p>
+
+        <p>
+          The gradebook had to be represented as an object in Javascript (kind
+          of like a spreadsheet which stores data), and I've worked with objects
+          before so I felt confident about this. I created a new 'gradebook'
+          object to store all my data about the students and their scores, so
+          far so good. However, I soon realised that each of the challenges
+          would require writing a function which a: looped through the object,
+          and b: added the students and their scores in on each loop - something
+          I was much less familiar with!
+        </p>
+
+        <p>
+          I used a variety of techniques to muddle through this. First, I
+          thought over the content I've learnt over the past week and a half at
+          Dev Academy, some of which already had involved similar challenges. I
+          revised some of this content and used it to create a plan of attack -
+          using pseudocode (comments in my code file written in plain English,
+          detailing step by step what I wanted my function to do). Once I had an
+          initial plan in place, I spent a lot of time Googling and researching
+          all about objects and looping through objects, visiting some very
+          helpful websites like MDN Web Docs and W3 Schools. Once I began
+          writing out code it took a long time to figure out the correct syntax
+          for the types of loops I was using, and I was really confused about
+          how to make sure each list of students corresponded to their correct
+          list of test scores. I ended up using a really handy command
+          'console.log' a lot, to show me what my function was currently
+          outputting, and I talked myself through my code out loud, step by
+          step. That helped me visualise what the computer was actually doing
+          with my function and how I needed to fix it. When I got really stuck I
+          posted on Dev Academy's Discord channels asking for help and sharing
+          my current code. This really helped me get some ideas I hadn't already
+          thought of.
+        </p>
+
+        <p>
+          I felt a lot of emotions throughout this process. The biggest one was
+          definitely frustration when I felt completely stuck! It was difficult
+          sometimes to not lose my patience, and I often felt stressed worrying
+          I wouldn't be able to find the right solution. Sometimes there was
+          some despair over my own abilities, and some concern that I was the
+          only one struggling. Ultimately reaching out for help was useful for
+          that as I could see that my peers were also asking similar questions
+          to me, and that we were all in the same boat. But when I solved a
+          problem and saw the little tests we needed to pass turn green - that
+          was so exciting! I felt so proud of myself every time I passed another
+          test, not to mention relieved.
+        </p>
+
+        <p>
+          Ultimately I learnt to be patient and keep encouraging myself through
+          the rough parts, trusting that I'd figure it out eventually. I also
+          realised the value of reshuffling my code around and seeing if that
+          helped - there were a few times when I had the right idea, but just
+          didn't get the right order of code statements in my function
+          initially! I felt like I'd learnt so much more about looping through
+          objects using a few different methods, like forEach and for... of, by
+          the end of the Gradebook challenges, and ended up feeling much more
+          confident with these kinds of loops.
+        </p>
       </div>
 
       <div class="paragraph-spacing">
-        <h2>Elegant problem solving</h2>
+        <h2>Bouncing back and winning the JS Olympics</h2>
 
-        <p>blah</p>
-        <p>blah</p>
+        <p>
+          By the time I'd finished the Gradebook challenges, my brain felt like
+          it'd gone through a cement mixer twice. I mostly got through the other
+          challenges okay, but things finally, really began to click when I got
+          to the final section of Javascript Kata: the JS Olympics. Sounds
+          intimidating, right? And I was definitely nervous. But what followed
+          was probably one of my proudest moments of the last couple of weeks.
+        </p>
+        <p>
+          Drawing on all the lessons I'd learnt from sucking at the previous
+          challenges, I rolled up my sleeves and started coding - and suddenly,
+          I was no longer sucking. I'm particularly proud of my solution for
+          challenge 2, which tasked me with writing a function called 'unjumble'
+          which takes a string (a sentence, or a word) and reverses it so it
+          comes out spelled backwards.
+        </p>
 
-        <p>blah</p>
+        <p>
+          When I first started learning Javascript last year, I came across a
+          similar challenge elsewhere which essentially asked me to do the same
+          thing. I remember how much of a struggle it was to understand how to
+          even begin attempting something like this, and how reliant I was on
+          other people's solutions to the problem before I could even begin to
+          code. This time was different - I went into the challenge having a
+          rough idea of what I'd need to do: break up the string into an array
+          (aka a list) of individual letters, reverse the order of the array,
+          and then join all the letters back up together and convert it back
+          into a string once more.
+        </p>
 
-        <p>blah</p>
+        <p>
+          I wasted no time in going to Google and looking up different methods
+          of changing around arrays. Javascript has some really handy
+          pre-conceived methods which I'd already been using in one of the
+          earlier Kata challenges, so that was also very helpful knowledge to
+          build on. I knew instantly I'd need to use a method called .split() to
+          break the string up into an array, so I went ahead and wrote that out
+          and was delighted to find it worked exactly as I envisioned. Next, I
+          looked through methods for reversing the array list on MDN Web Docs. I
+          knew the last time I'd done a similar challenge I'd ended up having a
+          pretty convoluted process: looping through the array and shifting each
+          letter from the start to the end, and then pushing the letters in
+          their new order into a new array which I then used as my final result.
+          This was perfectly acceptable, but I felt like I could do one better.
+          I ended up finding a nifty method called .reverse() - which does what
+          it says on the tin! After that, it was just a matter of rejoining up
+          all the letters and turning it back into a string, and returning the
+          result.
+        </p>
 
-        <p>blah</p>
+        <p>
+          As I was problem solving this challenge, I felt proud of how far I had
+          come. A year ago reversing a string was such a daunting task, and yet
+          here I was now not just solving it, but thinking about the cleanest
+          and easiest way to do so with the new knowledge I possessed. It felt
+          great to recognise my progress with JavaScript, particularly as I
+          still have a lot of moments where I struggle with it.
+        </p>
+
+        <p>
+          What I learnt was that I'm doing a lot better at this coding thing
+          then I give myself credit for! This challenge really showed me how
+          much knowledge my brain has actually soaked in about JavaScript, much
+          more than I had realised. A little confidence went a long way for me
+          in that challenge, and it spurred me on to do really well with the
+          following challenges - ultimately ending JS Kata on a high note.
+        </p>
       </div>
 
       <div class="paragraph-spacing">
-        <h2>Reflections on process</h2>
+        <h2>Problem solving techniques</h2>
 
-        <p>blah</p>
+        <p>
+          <strong>Psuedocode:</strong> This is one I use a lot nowadays, and I
+          feel pretty confident with it. It tends to be the first thing I do
+          when I approach a problem - it's a lot easier to code if you're
+          following a recipe.
+        </p>
 
-        <p>blah</p>
+        <p>
+          <strong>Trying something out:</strong> This is probably about 90% of
+          my coding process. Sometimes it can be frustrating if I've tried lots
+          of things and none of them are working, but every so often there's a
+          ray of light when something does work - and that's enough to keep me
+          trying things!
+        </p>
 
-        <p>blah</p>
+        <p>
+          <strong>Rubber ducky method:</strong> A classic which I'm still
+          building up confidence with. In the past I've used an AI like ChatGPT
+          to explain my code to me as if I'm the rubber duck, but now that I'm
+          at Dev Academy I try to explain my code to myself instead of relying
+          on a robot to do it for me. It's slowly helping me read my code better
+          and take the time to make sure I actually understand the logic.
+        </p>
+
+        <p>
+          <strong>Reading error messages:</strong> Another one I'm still
+          learning! Error messages can be super helpful, especially when they
+          catch a bracket I've missed or a word I've misspelled. But sometimes
+          they can still feel confusing - I usually try Googling the error
+          message to see if that helps shed more light on things.
+        </p>
+
+        <p>
+          <strong>Console.logging:</strong> My absolute favourite technique! I'm
+          really used to HTML and CSS, where it's easy to visualise the output
+          of your code and make adjustments as necessary. JavaScript doesn't
+          always make it so easy, but using console.log gives me a window into
+          my code which lets me monitor what's working and what isn't. Having
+          that clear visualisation of what adjustments I need to make is truly
+          invaluable. Definitely very confident with this one!
+        </p>
+
+        <p>
+          <strong>Googling:</strong> Another one I use all the time - it's what
+          got me into coding in the first place, in many ways. I've spent more
+          hours on search results for how to fix my code, and what things I can
+          try, than I have actually coding! I feel like I'm getting better at
+          writing a clear Google search which gets me relevant articles. I
+          especially look for results from MDN Web Docs, W3 Schools, and
+          freeCodeCamp.
+        </p>
+
+        <p>
+          <strong>Asking your peers for help:</strong> This works as long as I
+          don't let my ego get in the way! Sometimes I still feel a bit
+          embarrassed asking for help, especially if no one else appears to have
+          done so. It's never easy being the first one to reach out. But what's
+          really helping me get more confident in asking for help is seeing how
+          many other people are doing the same, and remembering that all of us
+          are learning and it's a safe space to get support.
+        </p>
+
+        <p>
+          <strong>Asking coaches for help:</strong> I think I often find this
+          easier than reaching out to my peers, especially if it's in a
+          one-on-one setting with a facilitator. It's something I've gotten
+          pretty confident at thankfully!
+        </p>
+
+        <p>
+          <strong>Improving your process with reflection:</strong> I really got
+          to practice this one during the challenges this week! I'd never really
+          reflected too strongly on my process before coming to Dev Academy.
+          This week, spending some time going over my process at the end of each
+          challenge, and thinking about what went well and what didn't, really
+          helped me improve for the challenges ahead. This one is still quite
+          new but I feel like I'm already seeing the benefits of reflecting.
+        </p>
       </div>
 
       <div class="paragraph-spacing">
         <h2>When I found it hard to ask for help</h2>
-        <p>blah</p>
+        <p>
+          This topic actually takes me back to Sprint 2 of Foundations, when I
+          was creating this website from scratch and finding it to be a bigger
+          challenge than I'd expected! I felt very confident about my experience
+          with HTML and CSS, so when things were going wrong it was hard to not
+          feel like I was failing at the easiest thing. It felt embarrassing to
+          ask for help for something I thought I wouldn't need help with.
+        </p>
 
-        <p>blah</p>
-        <p>blah</p>
+        <p>
+          It was a valuable lesson for me that all developers need help at some
+          stage, no matter their skillset or experience. I wasn't an idiot just
+          because something wasn't working - it was just an issue I hadn't
+          personally come across before! Once I'd reached out for help I felt so
+          much better, it was like a weight lifted. Next time I'll ask sooner
+          and not beat myself up about it.
+        </p>
+      </div>
+
+      <div class="paragraph-spacing">
+        <h2>What did I learn?</h2>
+
+        <p>
+          The Kata challenges, while sometimes frustratingly hard, were
+          ultimately really helpful in understanding where I'm at with
+          JavaScript. I was pleasantly surprised by how much I bounced back
+          after my struggles in the first half of the challenges - maybe my
+          brain just needed some time to warm up!
+        </p>
+
+        <p>
+          When I next try some Kata challenges out, I'll make sure I keep
+          encouraging myself, using the problem solving techniques I discussed
+          above, and taking plenty of breaks to avoid getting too in my head
+          about it all. It may have been an ordeal at times, but ultimately I
+          had a lot of fun - and I honestly can't wait to get stuck in to some
+          challenges again!
+        </p>
       </div>
     </article>
 
